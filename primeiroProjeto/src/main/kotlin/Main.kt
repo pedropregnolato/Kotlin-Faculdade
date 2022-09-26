@@ -211,4 +211,38 @@ fun main() {
     println("SACOU R$ 650.69")
     println("Saldo atual: R$ ${contaQuatro.saldo}")
 
+    println("") //pulando linha - gambi
+    println("/////////////////////////////////////////////////////////////////")
+    println("") //pulando linha - gambi
+
+    println("(Coleções - Array)")
+    println("") //pulando linha - gambi
+
+    val notas = FloatArray(4)
+    notas[0] = 10.0F
+    notas[1] = 9.0F
+    notas[2] = 7.0F
+    notas[3] = 8.0F
+    println("As notas do semestre foram: ${notas[0]}, ${notas[1]}, ${notas[2]}, ${notas[3]}")
+
+    println("") //pulando linha - gambi
+    println("/////////////////////////////////////////////////////////////////")
+    println("") //pulando linha - gambi
+
+//    comentei esse trecho pra fazer sentido o array abaixo
+//    val idades = IntArray(4)
+//    idades[0] = 18
+//    idades[1] = 11
+//    idades[2] = 28
+//    idades[3] = 16
+
+    val idades : IntArray = intArrayOf(18, 11, 28, 16) //produtividade
+    var maiorIdade = 0
+    for(idade in idades) {
+        if(idade > maiorIdade){
+            maiorIdade = idade
+        }
+    }
+    println("A maior idade é $maiorIdade")
+
 }
