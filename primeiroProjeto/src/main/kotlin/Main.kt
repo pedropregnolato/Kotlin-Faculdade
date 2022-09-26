@@ -157,7 +157,58 @@ fun main() {
     val conta = Conta()
     conta.titular = "Deyde Costa"
     conta.numeroConta = 123456
-    conta.saldo = 200.0
+    conta.saldo = 200.00
     println("Olá, ${conta.titular} (${conta.numeroConta})")
-    println("Saldo: ${conta.saldo}")
+    println("Saldo: R$ ${conta.saldo}")
+
+    println("") //pulando linha - gambi
+    println("(EXTRA - Segundo exercicio: conta com rendimento)")
+    println("") //pulando linha - gambi
+
+    val contaDois = Conta()
+    contaDois.titular = "Riquinho Jr."
+    contaDois.numeroConta = 101112
+    contaDois.saldo = 5000.00
+    println("Olá, ${contaDois.titular} (${contaDois.numeroConta})")
+    println("Saldo: R$ ${contaDois.saldo}")
+    contaDois.saldo += 352.7
+    println("RENDIMENTO MENSAL DE R$ 352.70")
+    println("Saldo atual: R$ ${contaDois.saldo}")
+
+    println("") //pulando linha - gambi
+    println("(EXTRA FUNÇÃO - Segundo exercicio: conta com rendimento)")
+    println("") //pulando linha - gambi
+
+    fun deposita(conta : Conta, valor : Double) {
+        conta.saldo += valor
+    }
+
+    val contaTres = Conta()
+    contaTres.titular = "Zé Luiz"
+    contaTres.numeroConta = 192835
+    contaTres.saldo = 8607.50
+    println("Olá, ${contaTres.titular} (${contaTres.numeroConta})")
+    println("Saldo: R$ ${contaTres.saldo}")
+    deposita(contaTres,522.75)
+    println("RENDIMENTO MENSAL DE R$ 522.75")
+    println("Saldo atual: R$ ${contaTres.saldo}")
+
+    println("") //pulando linha - gambi
+    println("(EXTRA FUNÇÃO - Segundo exercicio: sacar dinheiro)")
+    println("") //pulando linha - gambi
+
+    fun saca(conta : Conta, valor : Double) {
+        conta.saldo -= valor
+    }
+
+    val contaQuatro = Conta()
+    contaQuatro.titular = "Maria do Gás"
+    contaQuatro.numeroConta = 555000
+    contaQuatro.saldo = 1150.68
+    println("Olá, ${contaQuatro.titular} (${contaQuatro.numeroConta})")
+    println("Saldo: R$ ${contaQuatro.saldo}")
+    saca(contaQuatro,650.69)
+    println("SACOU R$ 650.69")
+    println("Saldo atual: R$ ${contaQuatro.saldo}")
+
 }
