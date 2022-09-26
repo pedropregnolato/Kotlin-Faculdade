@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71a3805c-b8db-42ff-ae4f-a3e0de53c723" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/primeiroProjeto/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/primeiroProjeto/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-    </list>
+    <list default="true" id="71a3805c-b8db-42ff-ae4f-a3e0de53c723" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
